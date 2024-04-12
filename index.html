@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></LInk>
+</head>
+<body class="app">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__stable-menu stable-menu">
+                <div class="stable-menu__item">
+                    <button class="button button--filter" type="button">
+                        <span class="button__icon"> 
+                                <img src="/images/filter.svg" alt="icon_burger"> 
+                        </span>
+                    </button>
+                    <h1 class="header__logo logo">DISCOVER.</h1>
+                </div>
+                <form action="" class="stable-menu__form">
+                    <input type="text" class="stable-menu__search" placeholder="Найти...">
+                    <button class="stable-menu__search-btn search-btn">
+                        <span class="search-btn__wrapper">
+                            <img src="images/search.svg" class="search-btn__image" alt="">
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <ul class="header__stable-buttoms">
+                <li class="stable-buttoms__item">
+                    <button class="button">
+                        <span class="button__icon">
+                            <img src="/images/news.svg" alt="icon_guide">
+                        </span>
+                    </button>
+                </li>
+                <li class="stable-buttoms__item">
+                    <button class="button">
+                        <span class="button__icon">
+                            <img src="/images/profile.svg" alt="icon_profile">
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <aside class="filter filter--off">
+        <div class="filter__wrapper">
+            <ul class="filter__additional-modifiers additional-modifiers">
+                <li class="additional-modifiers__item">Опциональные модификаторы поиска</li>
+                <li class="additional-modifiers__item">
+                    <span class="additional-modifiers__text">Платный ресурс</span>
+                    <input list="price" placeholder="Неважно" class="additional-modifiers__prise">
+                    <datalist id="price">
+                        <option>Неважно</option>
+                        <option>Бесплатный</option>
+                        <option>Платный</option>
+                        <option>Есть полезный бесплатный функционал</option>
+                    </datalist>
+                </li>
+                <li class="additional-modifiers__item">
+                    <span class="additional-modifiers__text">Новое</span>
+                    <input type='checkbox' value="Add to favorites" >
+                </li>
+            </ul>
+            <ul class="filter__menu">
+                <li class="filter__item">
+                    <span class="filter__title">География</span>
+                    <button class="filter__input filter__input--geo" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu ">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Общие карты
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Специальные карты
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Картографические инструменты
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Видео</span>
+                    <button class="filter__input filter__input--video" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Youtube
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Метаданные
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Веб-камеры
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Фото</span>
+                    <button class="filter__input filter__input--photo" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Поиск фотографии
+                            </label></li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Анализ фотографии
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Аудио</span>
+                    <button class="filter__input filter__input--audio" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item"><label><input type="checkbox">Улучшение звука</label></li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Транспорт</span>
+                    <button class="filter__input filter__input--transport" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Воздушный транспорт
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Поезда
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Автомобили
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Суда
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Люди</span>
+                    <button class="filter__input filter__input--people" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Социальное присутствие
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Поиск людей
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Социальные сети
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Телефон
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Почта
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Лицо
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Веб-сайты</span>
+                    <button class="filter__input filter__input--web-site" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Анализ веб-сайта
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Мониторинг
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Архивирование
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="filter__item">
+                    <span class="filter__title">Разное</span>
+                    <button class="filter__input filter__input--miscellaneous" >Ничего не выбрано</button>
+                    <ul class="filter__drop-down-menu drop-down-menu">
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Анализ веб-сайта
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Мониторинг
+                            </label>
+                        </li>
+                        <li class="drop-down-menu__item">
+                            <label>
+                                <input type="checkbox">Архивирование
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="body">
+        <div class="body__wrapper">
+            <ul class="card">
+                <li class="card__item">
+                    <img src="images/IMG_0324.png" alt="" class="card__image">
+                    <span class="card__wrapper-name">
+                        <h2 class="card__name">Site.name</h2>
+                    </span>
+                    <ul class="card__description">
+                        <li class="card__header">Люди</li>
+                        <li class="card__text">Социальная сеть VK</li>
+                        <li class="card__info">краткое описание инструмента
+                            краткое описание инструмента
+                            краткое описание инструмента
+                            краткое описание инструмента</li>
+                    </ul>
+                </li>
+                <li class="card__item">
+                    <img src="images/IMG_0331.png" alt="" class="card__image">
+                    <span class="card__wrapper-name">
+                        <h2 class="card__name">Site.name</h2>
+                    </span>
+                    <ul class="card__description">
+                        <li class="card__header"></li>
+                        <li class="card__text"></li>
+                        <li class="card__info"></li>
+                    </ul>
+                </li>
+                <li class="card__item">
+                    <img src="images/IMG_0332.png" alt="" class="card__image">
+                    <span class="card__wrapper-name">
+                        <h2 class="card__name">Site.name</h2>
+                    </span>
+                    <ul class="card__description">
+                        <li class="card__header"></li>
+                        <li class="card__text"></li>
+                        <li class="card__info"></li>
+                    </ul>
+                </li>
+                <li class="card__item">
+                    <img src="images/IMG_0327.png" alt="" class="card__image">
+                    <span class="card__wrapper-name">
+                        <h2 class="card__name">Site.name</h2>
+                    </span>
+                    <ul class="card__description">
+                        <li class="card__header"></li>
+                        <li class="card__text"></li>
+                        <li class="card__info"></li>
+                    </ul>
+                </li>
+                <li class="card__item">
+                    <img src="images/IMG_0328.png" alt="" class="card__image">
+                    <span class="card__wrapper-name">
+                        <h2 class="card__name">Site.name</h2>
+                    </span>
+                    <ul class="card__description">
+                        <li class="card__header"></li>
+                        <li class="card__text"></li>
+                        <li class="card__info"></li>
+                    </ul>
+                </li>
+                <li class="card__item">
+                    <img src="images/IMG_0333.png" alt="" class="card__image">
+                    <span class="card__wrapper-name">
+                        <h2 class="card__name">Site.name</h2>
+                    </span>
+                    <ul class="card__description">
+                        <li class="card__header"></li>
+                        <li class="card__text"></li>
+                        <li class="card__info"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="fog-off-war"></div>
+    <script src="index.js"></script>
+</body>
+</html>
